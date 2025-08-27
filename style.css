@@ -1,0 +1,273 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f1111;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navlogo img {
+    height: 50px;
+    width: auto;
+}
+
+.navaddress, .navsignin, .navreturn, .navcart {
+    margin: 5px 10px;
+}
+
+.addicon {
+    display: flex;
+    align-items: center;
+}
+
+.addfirst {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+.addsecond {
+    font-size: 0.9rem;
+    margin-left: 4px;
+}
+
+/* Search Bar */
+.navsearch {
+    display: flex;
+    flex: 1;
+    max-width: 500px;
+    margin: 5px 10px;
+    height: 35px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.navsearch  :hover {
+    border: 2px solid orange;
+}
+
+.searchselect {
+    border: none;
+    padding: 0 10px;
+    background-color: #f3f3f3;
+}
+
+.searchinput {
+    flex: 1;
+    border: none;
+    padding: 0 10px;
+}
+
+.searchicon {
+    background-color: #febd69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+/* Panel */
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #222f3d;
+    color: white;
+    padding: 5px 20px;
+    align-items: center;
+}
+
+.panelall {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.paneloptions {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.paneloptions p {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.paneldeals {
+    font-weight: 700;
+}
+
+/* Hero Section */
+.herosection {
+    height: 350px;
+    background-image: url('hero.jpeg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.heromessage {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.heromessage a {
+    color: #007185;
+    font-weight: 600;
+}
+
+/* Shop Section */
+.shopsection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.boximage {
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+}
+
+.boxcontent {
+    padding: 10px 15px;
+}
+
+.boxcontent h2 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.boxcontent p {
+    color: #007185;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footpanel1 {
+    background-color: #37475a;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.footpanel2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #222f3d;
+    padding: 20px 0;
+}
+
+.footpanel2 ul {
+    list-style: none;
+    margin: 10px;
+}
+
+.footpanel2 li {
+    margin: 5px 0;
+}
+
+.footpanel2 a {
+    color: #ddd;
+    font-size: 0.85rem;
+}
+
+.footpanel3 {
+    background-color: #222f3d;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footpanel3 img {
+    height: 50px;
+}
+
+.footpanel4 {
+    background-color: #0f1111;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.pages a {
+    margin: 0 5px;
+    color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .shopsection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .paneloptions {
+        display: none;
+    }
+
+    .shopsection {
+        grid-template-columns: 1fr;
+    }
+
+    .navsearch {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heromessage {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    .paneldeals {
+        display: none;
+    }
+}
