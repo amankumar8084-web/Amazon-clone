@@ -11,108 +11,48 @@ a {
     color: inherit;
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
+.navSection {
     align-items: center;
-    justify-content: space-between;
-    background-color: #0f1111;
-    color: white;
-    padding: 10px 20px;
+    /* Amazon Navbar Styles */
+.amazon-navbar {
+  background-color: #0f1111;
 }
 
-.navlogo img {
-    height: 50px;
-    width: auto;
-}
-
-.navaddress, .navsignin, .navreturn, .navcart {
-    margin: 5px 10px;
-}
-
-.addicon {
-    display: flex;
-    align-items: center;
-}
-
-.addfirst {
-    font-size: 0.8rem;
-    color: #ccc;
-}
-
-.addsecond {
-    font-size: 0.9rem;
-    margin-left: 4px;
+/* Amazon Logo */
+.amazon-logo {
+  height: 40px;
 }
 
 /* Search Bar */
-.navsearch {
-    display: flex;
-    flex: 1;
-    max-width: 500px;
-    margin: 5px 10px;
-    height: 35px;
-    border-radius: 4px;
-    overflow: hidden;
-}
-.navsearch  :hover {
-    border: 2px solid orange;
+.amazon-search {
+  max-width: 600px;
+  flex: 2;
 }
 
-.searchselect {
-    border: none;
-    padding: 0 10px;
-    background-color: #f3f3f3;
+.category-select {
+  max-width: 80px;
+  border-radius: 0;
 }
 
-.searchinput {
-    flex: 1;
-    border: none;
-    padding: 0 10px;
+.search-input {
+  flex: 1;
+  border-radius: 0;
 }
 
-.searchicon {
-    background-color: #febd69;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 10px;
-    cursor: pointer;
+.search-btn {
+  background: #febd69;
+  border-radius: 0;
 }
 
-/* Panel */
-.panel {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #222f3d;
-    color: white;
-    padding: 5px 20px;
-    align-items: center;
+/* Mobile Tweaks */
+@media (max-width: 992px) {
+  .amazon-search {
+    width: 100%;
+  }
 }
 
-.panelall {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-    cursor: pointer;
-}
 
-.paneloptions {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
 }
-
-.paneloptions p {
-    margin-right: 15px;
-    cursor: pointer;
-}
-
-.paneldeals {
-    font-weight: 700;
-}
-
 /* Hero Section */
 .herosection {
     height: 350px;
